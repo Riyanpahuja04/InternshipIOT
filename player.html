@@ -1,0 +1,30 @@
+    <html>  
+    <head>  
+        <title>Music Player-meditate</title>  
+        <link rel="stylesheet" href="player.css">
+    </head>  
+    <body>
+        <script type="text/javascript" src="index.js"></script>
+        <nav>
+            <ul class="topnav" id="dropdownClick">
+                <li><a href="./Index.html">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact">CONTACT </a></li>
+                <li class="topnav-right"><a href="#signup">SIGN-UP</a></li>
+                <li class="topnav-right"><a href="#login">LOGIN</a></li>
+                <li class ="dropdownIcon"><a href="javascript:void(0 )" onclick="dropdownMenu()">☰</a></li>
+            </ul>
+        </nav>
+        <input type="hidden" id="he">
+        <div class = "audio">
+            <h1 id='h1'> Now Playing...</h1>
+            <audio src="#" loop id="audio"></audio>  
+            <button id="play" onclick="play()">Play</button>
+            <button id="pause" onclick="pause()">Pause</button>
+        </div>
+        <footer class="foot">
+            <p> <b>BY : Riyan Pahuja</b></p>
+        </footer>
+    </body>
+    </html> 
+

@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Meditate</title>
+        <link rel="stylesheet" href="index.css">
+        <script type="text/javascript" src="index.js"></script>
+    </head>
+    <body>
+        <nav>
+            <ul class="topnav" id="dropdownClick">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact">CONTACT </a></li>
+                <li class="topnav-right"><a href="#signup">SIGN-UP</a></li>
+                <li class="topnav-right"><a href="#login">LOGIN</a></li>
+                <li class ="dropdownIcon"><a href="javascript:void(0 )" onclick="dropdownMenu()">☰</a></li>
+            </ul>
+        </nav>
+        
+        <div class="form">
+            <form>
+                <h1>Please select the sound you'd like to play.</h1>
+                <select value="songs" id="songs">
+                <option value="rain">Rain</option>
+                <option value="forest">Forest</option>
+                <option value="light">Light</option>
+                <option value="waterflow">Water Flow</option>
+                </select>
+            </form>
+            <br>
+            <a href="timer.html"><button type = "submit" value="NEXT" onclick="getSong()">NEXT</button></a>
+        </div>
+        <footer class="foot">
+            <p>Made for IOT internship.</p>
+            <p>&#169;</p>
+        </footer>
+    </body>
+
+</html> 

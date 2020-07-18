@@ -1,0 +1,142 @@
+/*##########################DEFUALTS###########################*/
+nav,header,footer{
+    display: block;
+}
+
+body{
+    line-height: 1;
+    margin:0;
+    background-image: url(./data/meditating.png);
+    background-repeat: no-repeat;
+    background-color: #FFFF66;
+}
+
+/*#########################NAV BAR#############################*/
+
+nav{
+    width:100%;
+    margin:0;
+}
+
+nav ul{
+    background-color: #FFFF66;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+ul.topnav li{
+    list-style : none;
+    float: left;
+}
+
+ul.topnav li.topnav-right {
+    float: right;
+}
+
+ul.topnav li a {
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: #666;
+}
+
+ul.topnav li a:hover {
+    background-color: #0080ff;
+    color: #fff;
+}
+
+ul.topnav li.dropdownIcon {
+    display: none;
+}
+
+/*###################FORM############################*/
+
+.form{
+    border: 2px solid black;
+    background-color: #FFFF66;
+    display: block;
+    text-align: center;
+    margin-top: 250px;
+    
+}
+form{
+    max-width: 100%;
+    display: block;
+    margin-left:500p;
+}
+form select{
+    max-width: 100%;
+    width: 300px;
+    height: 30px;
+    background-blend-mode: color;
+    font-size: 20px
+}
+form select:hover{
+    background-color: #0080ff;
+    color: #fff;
+}
+button{
+    width: 100px;
+    height: 40px;
+    background-color: skyblue;
+    text-decoration: underline;
+    text-shadow: 1px 1px purple;
+    font-size: 1rem;
+    padding: 10px;
+}
+button:hover{
+    background-color: #0080ff;
+    color: #fff;
+}
+/*####################################footer########################*/
+footer.foot {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #FFFF66;
+    padding-left: 10%;
+}
+footer.foot p {
+    float:left;
+    text-decoration-line: underline;
+    word-spacing: 1rem;
+    word-wrap: break-word;
+    line-height: normal;
+}
+
+/*###################MOBILE#############################*/
+
+@media screen and (max-width: 680px) {
+    ul.topnav li:not(:nth-child(1)) {
+        display: none;
+    }
+    
+    ul.topnav li.dropdownIcon {
+        display: block;
+        float: right;
+    }
+    
+    ul.topnav.responsive li.dropdownIcon{
+        position: absolute;
+        top: 0;
+        right:0;
+    }
+    
+    ul.topnav.responsive {
+        position: relative;
+    }
+    
+    ul.topnav.responsive li{
+        display: inline;
+        float: none;
+    }
+    
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+}

@@ -1,0 +1,150 @@
+/*##########################DEFUALTS###########################*/
+nav,header,footer{
+    display: block;
+}
+
+body{
+    line-height: 1;
+    margin:0;
+}
+
+/*#########################NAV BAR#############################*/
+
+nav{
+    width:100%;
+    margin:0;
+}
+
+nav ul{
+    background-color: #FFFF66;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+ul.topnav li{
+    list-style : none;
+    float: left;
+}
+
+ul.topnav li.topnav-right {
+    float: right;
+}
+
+ul.topnav li a {
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: #666;
+}
+
+ul.topnav li a:hover {
+    background-color: #0080ff;
+    color: #fff;
+}
+
+ul.topnav li.dropdownIcon {
+    display: none;
+}
+
+/*#########################TIMER############################*/
+body{
+    background-image: url(./data/meditating.png);
+    background-repeat: no-repeat;
+    background-color: #FFFF66;
+}
+.form-timer label{
+    text-decoration: underline;
+    color: midnightblue;
+    font-size: 20px;
+}
+.form-timer h1{
+    text-decoration: underline;
+    text-shadow: 1px 2px black;
+    color: lightyellow;
+}
+.form-timer{
+    max-width: 100%;
+    display: block;
+    text-align: center;
+    border: 2px solid black;
+    margin-top: 250px;
+}
+button{
+    max-width: 100%;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+    color: red;
+    background-color: skyblue;
+    text-shadow: 1px 1px black;
+}
+button:hover{
+    background-color: #0080ff;
+    color: #fff;
+}
+form select{
+    max-width: 100%;
+    width: 250px;
+    text-align: center;
+    font-size: 20px;
+    padding: 2px;
+    border: 2px solid black;
+    border-radius: 5%;
+}
+form select:hover{
+    background-color: #0080ff;
+    color: #fff;
+}
+/*####################################footer########################*/
+footer.foot {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #FFFF66;
+    padding-left: 10%;
+}
+footer.foot p {
+    float:left;
+    text-decoration-line: underline;
+    word-spacing: 1rem;
+    word-wrap: break-word;
+    line-height: normal;
+}
+
+/*###################MOBILE#############################*/
+
+@media screen and (max-width: 680px) {
+    ul.topnav li:not(:nth-child(1)) {
+        display: none;
+    }
+    
+    ul.topnav li.dropdownIcon {
+        display: block;
+        float: right;
+    }
+    
+    ul.topnav.responsive li.dropdownIcon{
+        position: absolute;
+        top: 0;
+        right:0;
+    }
+    
+    ul.topnav.responsive {
+        position: relative;
+    }
+    
+    ul.topnav.responsive li{
+        display: inline;
+        float: none;
+    }
+    
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+}
