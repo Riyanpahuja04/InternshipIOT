@@ -109,7 +109,7 @@ footer.foot {
     padding-left: 10%;
 }
 footer.foot p {
-    float:left;
+    text-align: center;
     text-decoration-line: underline;
     word-spacing: 1rem;
     word-wrap: break-word;

@@ -4,6 +4,7 @@ nav,header,footer{
 }
 
 body{
+    text-align: center;
     line-height: 1;
     margin:0;
     background-image: url(./data/meditating.png);
@@ -101,12 +102,13 @@ footer.foot {
     padding-left: 10%;
 }
 footer.foot p {
-    float:left;
+    text-align: center;
     text-decoration-line: underline;
     word-spacing: 1rem;
     word-wrap: break-word;
     line-height: normal;
 }
+
 
 /*###################MOBILE#############################*/
 

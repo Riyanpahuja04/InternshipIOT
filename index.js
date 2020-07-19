@@ -22,15 +22,11 @@ function getTime(){
     localStorage.setItem("time", playTime);
     
 }
-//function mesg(){
-//    playSong = localStorage.getItem("song");
-//    var x = document.getElementById("audio");
-//    if(playSong == "Rain")
-//        x.src = "rainsound.mp3"
-//    else if(playSong == "Forest" )
-//        x.src = "light.mpeg";
-//    alert("playing.."+x.src);
-//}
+function checkTime(){
+    var checkingTime = localStorage.getItem("time");
+    if(checkingTime == 0)
+        alert("Time limit selected is 0 audio will play untill paused!");
+}
 
 function getCurrenttime(){
     var aud = document.getElementById("audio");
@@ -58,20 +54,19 @@ function play(){
     var audio= document.getElementById("audio");
     audio.src = updateTrack();
     audio.load();
-    if(audio.duration < stopTime){
-        alert("The time limit exceeds music duration!!");
-        return 0;
-    }
+    checkTime();
       audio.currentTime=0;
       audio.play();
+    if(stopTime>0){
       console.log(audio.currentTime);
-      setInterval(function(){
+        setInterval(function(){
         
         if(audio.currentTime>stopTime){
           
           audio.pause();
         }
       },1000);
+    }
 
 }
 function pause(){
